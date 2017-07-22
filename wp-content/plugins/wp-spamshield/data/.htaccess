@@ -1,0 +1,14 @@
+<Files temp-comments-log-ddf7a6587179688f9bb02c3b21d75039.txt>
+	# Apache 2.2
+	<IfModule !mod_authz_core.c>
+		Order deny,allow
+		Deny from all
+	</IfModule>
+
+	# Apache 2.4
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+
+	ForceType "text/plain; charset=UTF-8"
+</Files>
